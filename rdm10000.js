@@ -9,10 +9,11 @@
   
   // Initial state of number list 
   const list = [];
-  const length = 10;
+  // Variable number length for easier length change
+  const maxNum = 10;
   console.log('start', `\n`, list)
 
-  while (list.length < length) {
+  while (list.length < maxNum) {
     list.push(list.length + 1)
   }
 
