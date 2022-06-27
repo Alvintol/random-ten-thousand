@@ -9,9 +9,10 @@
   
   // Initial state of number list 
   const list = [];
+  const length = 10;
   console.log('start', `\n`, list)
 
-  while (list.length < 10) {
+  while (list.length < length) {
     list.push(list.length + 1)
   }
 
