@@ -1,8 +1,19 @@
 // Generate a list of the integers 1 - 10,000 in random order
+// Create IIFE
+// Initialize empty state of number list
+// Create loop that generates numbers  
 
-const list = [];
 
+// immediately invoked function expression
 (() => {
-console.log('test1', list)
+  
+  // Initial state of number list 
+  const list = [];
+  console.log('start', list)
 
+  while (list.length < 10) {
+    list.push(list.length + 1)
+  }
+
+  console.log('end', ...list)
 })()
