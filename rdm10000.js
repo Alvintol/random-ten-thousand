@@ -18,8 +18,7 @@
   console.log('start', `\n`, list)
 
   while (list.length < maxNum) {
-    list.push(list.length + 1)
-    console.log(randomNum())
+    list.push(randomNum())
   }
 
   console.log(...list, `\n`, 'end' )
