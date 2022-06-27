@@ -9,11 +9,11 @@
   
   // Initial state of number list 
   const list = [];
-  console.log('start', list)
+  console.log('start', `\n`, list)
 
   while (list.length < 10) {
     list.push(list.length + 1)
   }
 
-  console.log('end', ...list)
+  console.log(...list, `\n`, 'end' )
 })()
