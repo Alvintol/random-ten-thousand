@@ -6,7 +6,7 @@
 // Create duplicate list number check
 // Create product return statement
 
-// immediately invoked function expression
+// Immediately invoked function expression
 (() => {
   
   // Initial state of number list 
