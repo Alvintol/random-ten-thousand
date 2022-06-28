@@ -4,6 +4,7 @@
 // Create loop that generates numbers  
 // Create random number call
 // Create duplicate list number check
+// Create product return statement
 
 // immediately invoked function expression
 (() => {
