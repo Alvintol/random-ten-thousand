@@ -11,13 +11,11 @@
   // Initial state of number list 
   const list = [];
 
-  // Variable number length for easier length change
-  const maxNum = 10000;
+  // Variable number length
+  const maxNum = 10;
 
   // Random number generator
   const randomNum = () => Math.ceil(Math.random() * maxNum)
-
-  console.log('start', `\n`, list)
 
   // Continuous loop that persists while the list of integers is less than desired length
   while (list.length < maxNum) {
@@ -28,10 +26,14 @@
     // Duplicate integer check in current state of list[]
     if (!list.find(num => num === newNum)) {
 
-    // if krandomly generated number is unique. Add to list
+    // If generated number is unique. Add to list
       list.push(newNum)
     }
   }
+  
+  // Result if just terminal output is required without array brackets
+  console.log(...list)
 
-  console.log(...list, `\n`, 'end' )
+  // Result if require to be exported and return an array of Integers
+  return list
 })()
