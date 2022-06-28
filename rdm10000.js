@@ -5,6 +5,7 @@
 // Create random number call
 // Create duplicate list number check
 // Create product return statement
+// Optimize
 
 // Immediately invoked function expression
 
