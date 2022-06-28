@@ -7,7 +7,9 @@
 // Create product return statement
 
 // Immediately invoked function expression
+
 (() => {
+  const t0 = performance.now()
   
   // Initial state of number list 
   const list = [];
@@ -25,7 +27,7 @@
     const newNum = randomNum();
     
     // Duplicate integer check in current state of list[]
-    if (!list.find(num => num === newNum)) {
+    if (list.indexOf(newNum)) {
 
     // If generated number is unique. Add to list
       list.push(newNum)
@@ -36,5 +38,7 @@
   console.log(...list)
 
   // Result if require to be exported and return an array of Integers
+  const t1 = performance.now()
+  console.log(t1 - t0, 'milliseconds')
   return list
 })()
