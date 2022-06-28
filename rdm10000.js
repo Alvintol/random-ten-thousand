@@ -8,10 +8,7 @@
 // Optimize
 
 // Immediately invoked function expression
-
 (() => {
-  const t0 = performance.now()
-  
   // Initial state of number list 
   const list = [];
 
@@ -39,7 +36,5 @@
   console.log(...list)
 
   // Result if require to be exported and return an array of Integers
-  const t1 = performance.now()
-  console.log(t1 - t0, 'milliseconds')
   return list
 })()
