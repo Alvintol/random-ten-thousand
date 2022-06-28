@@ -23,15 +23,15 @@
 
     // Locally generated number for each loop instance
     const newNum = randomNum();
-    
+
     // Duplicate integer check in current state of list[]
     if (list.indexOf(newNum)) {
 
-    // If generated number is unique. Add to list
+      // If generated number is unique. Add to list
       list.push(newNum)
     }
   }
-  
+
   // Result if just terminal output is required without array brackets
   console.log(...list)
 
