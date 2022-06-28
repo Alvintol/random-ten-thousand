@@ -12,7 +12,7 @@
   const list = [];
 
   // Variable number length
-  const maxNum = 10;
+  const maxNum = 10000;
 
   // Random number generator
   const randomNum = () => Math.ceil(Math.random() * maxNum)
